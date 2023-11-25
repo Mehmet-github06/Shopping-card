@@ -7,6 +7,9 @@ const cartTotal = document.querySelector(".total-value");
 const cartContent = document.querySelector(".cart-list");
 const productsDom = document.querySelector("#products-dom");
 
+let cart = [];
+let buttonsDom = [];
+
 class Products {
   async getProducts() {
     try {
@@ -46,8 +49,33 @@ class UI {
         </div>`;
             
         });
-        
+
         productsDom.innerHTML=result
+    }
+
+    getBagButtons(){
+        const buttons= [...document.querySelectorAll(".btn-add-to-cart")]
+        buttonsDom = buttons;
+        console.log(buttons);
+
+        buttons.forEach(button =>{
+            let id = button.dataset.id;
+            let inCart = cart.find(item => item.id === id);
+            if(inCart){
+                button.setAttribute("disabled", "disabled");
+                button.opacity = ".3";
+            }else{
+                button.addEventListener("click", (event) =>{
+                    event.target.disabled = true;
+                    event.target.style.opacity =".3";
+
+                })
+            }
+
+        })
+        
+        
+        
     }
 }
 
@@ -59,5 +87,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   products.getProducts().then(products => {
     ui.displayProducts(products);  
+  }).then(()=>{
+    ui.getBagButtons()
   })
 });
