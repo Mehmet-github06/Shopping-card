@@ -57,15 +57,15 @@
     <div class="product-area">
         <div class="container">
             <h2 class="product-area-title">Featured Product</h2>
-            <div class="row" id="product-dom">
+            <div class="row" id="products-dom">
                 <div class="col-lg-4 col-md-6">
                     <div class="product">
                         <div class="product-image">
                             <img src="./assets/product1.png" alt="product">
                         </div>
                         <div class="product-hover">
-                            <span class="product-title">Table</span>
-                            <span class="product-price">$250</span>
+                            <span class="product-title">table</span>
+                            <span class="product-price">$300</span>
                             <button class="btn-add-to-cart">
                                 <i class="fas fa-cart-shopping"></i>
                             </button>
@@ -76,6 +76,55 @@
         </div>
     </div>
     <!--- product list  end-->
+
+      <!--- cart list start  -->
+      <div class="offcanvas offcanvas-end" id="offcanvasRight">
+        <div class="offcanvas-header">
+            <h5>Shopping Cart</h5>
+            <button class="btn-close" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="shopping-cart">
+                <ul class="cart-list">
+                    <li class="cart-list-item">
+                        <div class="cart-left">
+                            <div class="cart-left-image">
+                                <img src="./assets/product1.png" alt="product" />
+                            </div>
+                            <div class="cart-left-info">
+                                <a class="cart-left-info-title" href="#">table</a>
+                                <span class="cart-left-info-price">$300</span>
+                            </div>
+                        </div>
+                        <div class="cart-right">
+                            <div class="cart-right-quantity">
+                                <button class="quantity-minus">
+                                    <i class="fas fa-minus"></i>
+                                </button>
+                                <span class="quantity">0</span>
+                                <button class="quantity-plus">
+                                    <i class="fas fa-plus"></i>
+                                </button>
+                            </div>
+                            <div class="cart-right-remove">
+                                <button class="cart-remove-btn">
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="shopping-cart-bottom">
+                    <div class="total">
+                        <div class="total-title">Subtotal:</div>
+                        <span class="total-value">$ 0</span>
+                    </div>
+                    <button class="btn-clear" type="button">CLEAR</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
 
 

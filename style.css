@@ -185,7 +185,7 @@ button {
 /* / PRODUCT BÖLÜMÜ............................................................... */
 
 .product-area {
-  margin-top: 3.5rem;
+  margin-top: 2rem;
 }
 
 .product-area-title {
@@ -282,6 +282,8 @@ button {
   opacity: 1;
 }
 
+/* /  offcanvas................................................................... */
+
 .offcanvas-header {
   padding: 1.25rem;
 }
@@ -322,7 +324,7 @@ button {
 }
 
 .shopping-cart .cart-list-item .cart-left-image > img {
-  height: 60px;
+  height: 65px;
 }
 
 .shopping-cart .cart-list-item .cart-left-info {
@@ -397,6 +399,8 @@ button {
   font-size: 0.875rem;
   pointer-events: none;
 }
+/* / shopping-cart-bottom........................................................ */
+
 
 .shopping-cart-bottom {
   padding: 1.25rem;
@@ -426,7 +430,15 @@ button {
   background: #FFB338;
   color: #fff;
   padding: 0.812rem 0;
-  border-radius: 4px;
+  border-radius: 2rem;
   margin-top: 1rem;
 }
-/*# sourceMappingURL=style.css.map */
+
+.shopping-cart-bottom .btn-clear:hover{
+    background-color:#fff ;
+    color: #FFB338;
+    border: 3px solid #FFB338;
+    transform: scale(90%);
+    transition: all .7s ease;
+
+}
