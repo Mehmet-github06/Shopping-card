@@ -102,7 +102,7 @@ button {
 }
 
 .banner-area .banner-content {
-    border: 1px solid;
+    /* border: 1px solid; */
   position: absolute;
   width: 100%;
   top: 15%;
@@ -116,6 +116,7 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+          justify-content: center;
   margin-top: 3.125rem;
 }
 
@@ -137,6 +138,7 @@ button {
   color: #282825;
   font-family: 'Times New Roman', Times, serif;
   margin-top: 1.875rem;
+  text-align: center;
 }
 
 @media (max-width: 768px) {
@@ -164,7 +166,7 @@ button {
 }
 
 .banner-area .banner-content-link {
-  color: #181813;
+  color: #FFFFFF;
   font-size: 1.125rem;
   letter-spacing: 0.05rem;
   text-decoration: none;
