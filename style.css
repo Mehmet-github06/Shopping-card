@@ -16,9 +16,6 @@ button {
   border: none;
 }
 
-
-
-/*/ HEADER BÖLÜMÜ................................................................ */
 .header-area {
   background: rgba(24, 24, 19, 0.7);
   position: fixed;
@@ -29,7 +26,7 @@ button {
 }
 
 .header-area .navbar {
-  padding: 2rem 0;
+  padding: 2.125rem 0;
 }
 
 @media (max-width: 768px) {
@@ -44,7 +41,7 @@ button {
 }
 
 .header-area .navbar-left .btn-bar .fa-bars {
-  font-size: 2.2rem;
+  font-size: 2rem;
   color: #fff;
 }
 
@@ -61,8 +58,8 @@ button {
 
 .header-area .navbar-right .cart-btn .cart-items {
   position: absolute;
-  right: -1.2rem;
-  top: -1rem;
+  right: -1rem;
+  top: -0.875rem;
   padding: 0 6px;
   font-size: 0.875rem;
   border-radius: 30%;
@@ -76,14 +73,10 @@ button {
   color: #fff;
 }
 
-
-/* / BANNER BÖLÜMÜ.............................................................. */
-
 .banner-area .banner-image {
   width: 100%;
   z-index: -1;
 }
-
 
 .banner-area .banner-image > img {
   height: 700px;
@@ -102,7 +95,6 @@ button {
 }
 
 .banner-area .banner-content {
-    /* border: 1px solid; */
   position: absolute;
   width: 100%;
   top: 15%;
@@ -116,14 +108,13 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-          justify-content: center;
   margin-top: 3.125rem;
 }
 
 .banner-area .banner-content-subtitle {
   color: #282825;
-  font-size: 30px;
-  letter-spacing: 0.3rem;
+  font-size: 24px;
+  letter-spacing: 0.2rem;
   font-weight: bold;
 }
 
@@ -138,7 +129,6 @@ button {
   color: #282825;
   font-family: 'Times New Roman', Times, serif;
   margin-top: 1.875rem;
-  text-align: center;
 }
 
 @media (max-width: 768px) {
@@ -166,13 +156,13 @@ button {
 }
 
 .banner-area .banner-content-link {
-  color: #FFFFFF;
+  color: #181813;
   font-size: 1.125rem;
   letter-spacing: 0.05rem;
   text-decoration: none;
   font-weight: bold;
   background: #FFB338;
-  padding: 1rem 2.5rem;
+  padding: 1rem 2.875rem;
   border-radius: 30px;
   margin-top: 1.875rem;
 }
@@ -184,10 +174,8 @@ button {
   }
 }
 
-/* / PRODUCT BÖLÜMÜ............................................................... */
-
 .product-area {
-  margin-top: 2rem;
+  margin-top: 3.5rem;
 }
 
 .product-area-title {
@@ -284,8 +272,6 @@ button {
   opacity: 1;
 }
 
-/* /  offcanvas................................................................... */
-
 .offcanvas-header {
   padding: 1.25rem;
 }
@@ -326,7 +312,7 @@ button {
 }
 
 .shopping-cart .cart-list-item .cart-left-image > img {
-  height: 65px;
+  height: 60px;
 }
 
 .shopping-cart .cart-list-item .cart-left-info {
@@ -401,8 +387,6 @@ button {
   font-size: 0.875rem;
   pointer-events: none;
 }
-/* / shopping-cart-bottom........................................................ */
-
 
 .shopping-cart-bottom {
   padding: 1.25rem;
@@ -432,15 +416,7 @@ button {
   background: #FFB338;
   color: #fff;
   padding: 0.812rem 0;
-  border-radius: 2rem;
+  border-radius: 4px;
   margin-top: 1rem;
 }
-
-.shopping-cart-bottom .btn-clear:hover{
-    background-color:#fff ;
-    color: #FFB338;
-    border: 3px solid #FFB338;
-    transform: scale(90%);
-    transition: all .7s ease;
-
-}
+/*# sourceMappingURL=style.css.map */
